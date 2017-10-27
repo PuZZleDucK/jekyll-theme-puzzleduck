@@ -3,5 +3,6 @@
 .sass-cache
 _site
 _posts
+_config.yml
 Gemfile.lock
 index.md
