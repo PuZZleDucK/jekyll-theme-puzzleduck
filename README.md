@@ -29,6 +29,19 @@ Or install it yourself as:
     $ gem install jekyll-theme-puzzleduck
 
 
+## Additional configuration
+
+Configure additional linnks in _config.yml
+
+- linkedin_username
+- android_username
+- copyright_name
+- copyright_email
+- source_url
+
+
+
+
 ## About
 
 Based on Minima.
@@ -49,4 +62,3 @@ When your theme is released, only the files in `_layouts`, `_includes`, and `_sa
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
