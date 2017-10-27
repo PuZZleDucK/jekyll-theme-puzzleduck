@@ -3,7 +3,6 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" defer></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" defer></script>

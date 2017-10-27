@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-puzzleduck"
-  spec.version       = "0.1.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["PuZZleDucK"]
   spec.email         = ["puzzleduck@gmail.com"]
 
-  spec.summary       = "Jekyll theme for the PuZZleDucK.org blog"
+  spec.summary       = "Jekyll theme using Materialize for the PuZZleDucK.org blog"
   spec.homepage      = "https://puzzleduck.github.io/jekyll-theme-puzzleduck/"
   spec.license       = "MIT"
 
