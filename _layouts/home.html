@@ -4,23 +4,28 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  
   {{ content }}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+  <div class="row">
+    <div class="col s12 l10 cards-container">
+      <h1 class="page-heading center">Blog Posts</h1> {% for post in site.posts %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        <div class="card primary z-depth-5">
+          <div class="card-title center">
+            <h5 class="title">{{ post.title | escape }}</h5>
+            <hr />
+          </div>
+          <div class="post-content center" itemprop="articleBody">
+            <i class="material-icons small">account_balance</i> - {{ post.date | date: date_format }}
+          </div>
+        </div>
+      </a>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | relative_url }}">via RSS</a></p>
 
 </div>
