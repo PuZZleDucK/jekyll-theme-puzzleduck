@@ -2,7 +2,7 @@
 
 This is the Jekyll theme for the PuZZleDucK.org blog.
 
-[Theme preview](https://puzzleduck.github.io/jekyll-theme-puzzleduck/)
+[Theme preview](https://puzzleduck.gitlab.io/Development-Adventures)
 
 ![jekyll-theme-puzzleduck theme preview](/screenshot.png)
 
@@ -22,7 +22,7 @@ theme: jekyll-theme-puzzleduck
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
