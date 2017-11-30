@@ -31,7 +31,7 @@ Or install it yourself as:
 
 ## Additional configuration
 
-Configure additional links in _config.yml
+Configure additional links in ```_config.yml```
 
 - linkedin_username
 - android_username
@@ -39,6 +39,16 @@ Configure additional links in _config.yml
 - copyright_email
 - source_url
 
+
+## Development
+
+```bash
+git clone https://github.com/PuZZleDucK/jekyll-theme-puzzleduck.git
+cd jekyll-theme-puzzleduck
+bundle install
+# add some _posts, a config file and index.md for testing
+bundle exec jekyll serve
+```
 
 ## About
 

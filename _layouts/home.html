@@ -2,30 +2,34 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home  inset center-align">
 
   {{ content }}
 
-  <div class="row">
-    <div class="col s12 l10 cards-container">
-      <h1 class="page-heading center">Blog Posts</h1> {% for post in site.posts %}
+  <div class="col card-panel highlight">
 
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        <div class="card primary z-depth-5">
-          <div class="card-title center">
-            <h5 class="title">{{ post.title | escape }}</h5>
-            <hr />
-          </div>
-          <div class="post-content center" itemprop="articleBody">
-            <i class="material-icons small">account_balance</i> - {{ post.date | date: date_format }}
-          </div>
-        </div>
-      </a>
+    <div class="col card-panel primary">
+      <h4 class="page-heading center-align">Articles</h4>
+    </div>
 
-      {% endfor %}
+    <div class="row">
+
+        {% for post in site.posts %}
+          <div class="col s12 m6 l4 cards-container">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              <div class="card primary z-depth-5">
+                <div class="card-title center">
+                  <h5 class="title">{{ post.title | escape }}</h5>
+                  <hr />
+                </div>
+                <div class="post-content center" itemprop="articleBody">
+                  <i class="material-icons small">account_balance</i> - {{ post.date | date: date_format }}
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+
     </div>
   </div>
-
-  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | relative_url }}">via RSS</a></p>
-
 </div>

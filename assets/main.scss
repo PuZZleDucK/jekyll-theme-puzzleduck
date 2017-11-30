@@ -32,6 +32,23 @@ html {
   font-family: KirstyRegular;
 }
 
+
+.centered {
+  display: inline;
+  align-content:center;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inset {
+  padding-left: 1%;
+  width: 99%;
+  display: block;
+}
+
+
+
 /* Title and Nav */
 nav .brand-logo {
     font-size: 3rem;
