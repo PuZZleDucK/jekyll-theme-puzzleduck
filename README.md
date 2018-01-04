@@ -39,6 +39,10 @@ Configure additional links in ```_config.yml```
 - copyright_email
 - source_url
 
+For each post the following should be provided in the front matter
+
+- title-image (an image from /assets/img/)
+
 
 ## Development
 

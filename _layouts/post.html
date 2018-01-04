@@ -8,7 +8,14 @@ layout: default
 
       <div class="card primary z-depth-5">
         <div class="card-title center">
-          <h5 class="title"><i class="material-icons small">account_balance</i> - {{ page.title | escape }}</h5>
+          <h3 class="title valign-wrapper">
+            {% if page.title-image %}
+              <img height="100px" src="/assets/img/{{ page.title-image }}" />
+            {% else %}
+              <img height="100px" src="/assets/img/no_image.svg" />
+            {% endif %}
+            <p text-align="center" align="center" class="center"> {{ page.title | escape }} </p>
+          </h3>
           <hr />
         </div>
         <div class="post-content" itemprop="articleBody">
