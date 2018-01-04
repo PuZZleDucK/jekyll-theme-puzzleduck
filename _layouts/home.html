@@ -21,9 +21,9 @@ layout: default
                 <div class="card-title center">
                   <h5 class="title valign-wrapper">
                     {% if post.title-image %}
-                      <img height="100px" src="/assets/img/{{ post.title-image }}" />
+                      <img class="hide-on-small-only" height="100px" src="/assets/img/{{ post.title-image }}" />
                     {% else %}
-                      <img height="100px" src="/assets/img/no_image.svg" />
+                      <img class="hide-on-small-only" height="100px" src="/assets/img/no_image.svg" />
                     {% endif %}
                     <p align="center">{{ post.title | escape }}</p>
                   </h5>
