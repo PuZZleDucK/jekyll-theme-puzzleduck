@@ -1,2 +1,3 @@
+git push origin master
 gem build jekyll-theme-puzzleduck.gemspec
-gem push jekyll-theme-puzzleduck-*.gem
+echo "Run: gem push jekyll-theme-puzzleduck-<version>.gem"
