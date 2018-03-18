@@ -10,9 +10,9 @@ layout: default
         <div class="card-title center">
           <h3 class="title valign-wrapper">
             {% if page.title-image %}
-              <img class="hide-on-small-only" height="100px" src="/{{ site.baseurl }}/assets/img/{{ page.title-image }}" />
+              <img class="hide-on-small-only" height="100px" src="{{ site.baseurl }}/assets/img/{{ page.title-image }}" />
             {% else %}
-              <img class="hide-on-small-only" height="100px" src="/{{ site.baseurl }}/assets/img/no_image.svg" />
+              <img class="hide-on-small-only" height="100px" src="{{ site.baseurl }}/assets/img/no_image.svg" />
             {% endif %}
             <p text-align="center" align="center" class="center truncate"> {{ page.title | escape }} </p>
           </h3>
